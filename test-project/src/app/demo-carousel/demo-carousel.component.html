@@ -1,0 +1,7 @@
+<carousel [noPause]="noPause">
+  <slide *ngFor = "let photo of photos">
+    <img src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg" class="carouselItem">
+  </slide>
+</carousel>
+
+
